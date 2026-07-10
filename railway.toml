@@ -1,0 +1,10 @@
+# Railway — configuração de deploy do bot Rede Tuga
+# Docs: https://docs.railway.app
+
+[deploy]
+startCommand = "python main.py"
+restartPolicyType = "ON_FAILURE"
+restartPolicyMaxRetries = 10
+
+# O Railway injeta automaticamente as variáveis definidas em Secrets.
+# Não é necessário buildpack — Python é detectado via requirements.txt.
