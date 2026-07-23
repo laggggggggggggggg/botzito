@@ -1,0 +1,13 @@
+{
+  "$schema": "https://railpack.dev/schema.json",
+  "provider": "python",
+  "python": {
+    "version": "3.11"
+  },
+  "install": {
+    "commands": [
+      "pip install -r requirements.txt"
+    ]
+  },
+  "start": "python main.py"
+}
